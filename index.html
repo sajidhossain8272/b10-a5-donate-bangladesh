@@ -38,7 +38,91 @@
       <button onclick="openHistory()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-white" > History </button>
     </div>
   </section>
+
+  <section class="pr-2 pl-2 lg:pt-8 lg:flex justify-center">
+    <div class="lg:flex lg:w-[70%] bg-base-100 shadow-xl border-2 rounded-lg lg:p-4 lg:pt-8 lg:pl-8 lg:pr-8">
+      <figure class="min-w-fit">
+        <img
+          src="assets/noakhali.png"
+          alt="Noakhali" />
+      </figure>
+      <div class="card-body ">
+        <button class="btn w-fit">
+          <img src="assets/coin.png" alt="">0 BDT</button>
+        <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+        <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+        <div class="card-actions justify-start">
+          <input id="input" class="pl-2 w-full h-10 border-2" type="number" placeholder="Write Donation Amount">
+        </div>
+        <!-- Open the modal using ID.showModal() method -->
+<button class="btn bg-lime-300" onclick="my_modal_5.showModal()">Donate Now</button>
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-3xl font-bold flex justify-center">Congratulations!</h3>
+    <div class="flex justify-center mt-4">
+    <img src="assets/coin.png" alt="">
+  </div>
+    <p class="py-4 flex justify-center">You have donated for Humanity.</p>
+    <h3 class="text-xl font-bold flex justify-center">Successfully</h3>
+    <div class="modal-action flex justify-center">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pr-2 pl-2 lg:pt-8 lg:flex justify-center">
+    <div class="lg:flex lg:w-[70%] bg-base-100 shadow-xl border-2 rounded-lg lg:p-4 lg:pt-8 lg:pl-8 lg:pr-8">
+      <figure class="min-w-fit">
+        <img
+          src="assets/feni.png"
+          alt="Feni, Bangladesh Flood" />
+      </figure>
+      <div class="card-body ">
+        <button class="btn w-fit">
+          <img src="assets/coin.png" alt="">0 BDT</button>
+        <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+        <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+        <div class="card-actions justify-start">
+          <input class="pl-2 w-full h-10 border-2" type="number" placeholder="Write Donation Amount">
+        </div>
+        <div class="card-actions justify-start">
+          <button onclick="my_modal_5.showModal()" class="btn w-full mb-20 bg-lime-300">Donate now</button>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pr-2 pl-2 lg:pt-8 lg:flex justify-center pb-20">
+    <div class="lg:flex lg:w-[70%] bg-base-100 shadow-xl border-2 rounded-lg lg:p-4 lg:pt-8 lg:pl-8 lg:pr-8">
+      <figure class="min-w-fit">
+        <img
+          src="assets/quota-protest.png"
+          alt="Students Injured on Quota Protest" />
+      </figure>
+      <div class="card-body ">
+        <button class="btn w-fit">
+          <img src="assets/coin.png" alt="">0 BDT</button>
+        <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+        <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+        <div class="card-actions justify-start">
+          <input class="pl-2 w-full h-10 border-2" type="number" placeholder="Write Donation Amount">
+        </div>
+        <div class="card-actions justify-start">
+          <button onclick="my_modal_5.showModal()" class="btn w-full mb-20 bg-lime-300">Donate now</button>
+      </div>
+      </div>
+    </div>
+  </section>
 </body>
 <script src="JS/navigation.js"></script>
+<script src="JS/modal.js"></script>
 
 </html>
