@@ -1,12 +1,15 @@
-function openBlog() {
-  window.location.href = "blog.html";
-}
-
 function openHistory() {
-  window.location.href = "history.html"
+  document.getElementById("main-content").classList.add("hidden");
+
+  document.getElementById("transaction-history").classList.remove("hidden");
+
+  const historyList = document.getElementById("history-list");
+
+  historyList.innerHTML = `
+  `;
 }
 
-function openIndex() {
-  window.location.href = "index.html"
-
+function closeHistory() {
+  document.getElementById("main-content").classList.remove("hidden");
+  document.getElementById("transaction-history").classList.add("hidden");
 }

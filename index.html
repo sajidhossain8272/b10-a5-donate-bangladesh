@@ -33,7 +33,7 @@
 
   <section>
     <div class="flex justify-center gap-4 lg:pb-4 pb-4">
-      <button onclick="openIndex()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-lime-300" > Donation </button>
+      <button onclick="closeHistory()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-lime-300" > Donation </button>
       <button onclick="openHistory()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-white" > History </button>
     </div>
   </section>
@@ -42,6 +42,8 @@
 </header>
 
 <body>
+
+  <div id="main-content">
 
 
   <section class="pr-2 pl-2 lg:pt-8 lg:flex justify-center lg:pb-0 pb-4">
@@ -53,7 +55,10 @@
       </figure>
       <div class="card-body ">
         <button class="btn w-fit">
-          <img src="assets/coin.png" alt="">0 BDT</button>
+          <img src="assets/coin.png" alt="">
+        <h1 id="noakhali-balance">0</h1>
+        <h1>BDT</h1>
+        </button>
         <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
         <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
         <div class="card-actions justify-start">
@@ -90,7 +95,10 @@
       </figure>
       <div class="card-body ">
         <button class="btn w-fit">
-          <img src="assets/coin.png" alt="">0 BDT</button>
+          <img src="assets/coin.png" alt="">
+          <h1 id="feni-balance">0</h1>
+          <h1>BDT</h1>
+        </button>
         <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
         <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
         <div class="card-actions justify-start">
@@ -112,7 +120,10 @@
       </figure>
       <div class="card-body ">
         <button class="btn w-fit">
-          <img src="assets/coin.png" alt="">0 BDT</button>
+          <img src="assets/coin.png" alt="">
+          <h1 id="aid-balance">0</h1>
+          <h1>BDT</h1>
+        </button>
         <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
         <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
         <div class="card-actions justify-start">
@@ -124,6 +135,13 @@
       </div>
     </div>
   </section>
+
+</div>
+
+<div id="transaction-history" class="hidden">
+    <h1 class="flex justify-center font-bold">Transaction History</h1>
+</div>
+
 </body>
 <script src="JS/navigation.js"></script>
 <script src="JS/donation.js"> </script>
