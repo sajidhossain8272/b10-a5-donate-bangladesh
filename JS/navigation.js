@@ -13,3 +13,8 @@ function closeHistory() {
   document.getElementById("main-content").classList.remove("hidden");
   document.getElementById("transaction-history").classList.add("hidden");
 }
+
+function openBlog() {
+  window.open('blog.html', '_blank'
+  )
+}
