@@ -10,7 +10,9 @@ function processDonation(inputId) {
   };
 
   const donationBalanceElementId = balanceMap[inputId];
-  const donationBalanceElement = document.getElementById(donationBalanceElementId);
+  const donationBalanceElement = document.getElementById(
+    donationBalanceElementId
+  );
   let donationBalance = parseFloat(donationBalanceElement.innerText);
 
   if (donationAmount && donationAmount > 0) {
@@ -24,6 +26,7 @@ function processDonation(inputId) {
       document.getElementById("my_modal_5").showModal();
 
       logTransaction(inputId, donationAmount);
+      document.getElementById(inputId).value = "";
     } else {
       alert("Insufficient balance.");
     }
@@ -47,12 +50,21 @@ function logTransaction(fundId, amount) {
   }
 
   const transactionElement = document.createElement("p");
-  transactionElement.classList.add("shadow-lg", "border-2", "p-4", "rounded-lg", "font-medium", "text-xl");
+  transactionElement.classList.add(
+    "shadow-lg",
+    "border-2",
+    "p-4",
+    "rounded-lg",
+    "font-medium",
+    "text-xl"
+  );
 
   const now = new Date();
   const localTime = now.toLocaleString();
 
-  transactionElement.innerHTML = `Donated ${amount.toFixed(2)} for ${fundNames[fundId]}<br> on ${localTime}`;
+  transactionElement.innerHTML = `Donated ${amount.toFixed(2)} for ${
+    fundNames[fundId]
+  }<br> on ${localTime}`;
 
   transactionContainer.appendChild(transactionElement);
 }
