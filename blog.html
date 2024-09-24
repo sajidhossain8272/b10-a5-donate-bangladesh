@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +8,54 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="">
-  <h1 class=" flex justify-center text-3xl font-bold p-10">Frequently Asked Questions! <span>  <img width="20px" src="assets/help.png" alt="">
-  </span></h1>
+  <h1 class=" flex justify-center text-3xl font-bold p-10">Frequently Asked Questions! <span> <img width="20px"
+        src="assets/help.png" alt="">
+    </span></h1>
 
   <div class="p-5">
-  <div class="collapse collapse-arrow bg-base-200">
-    <input type="radio" name="my-accordion-2" checked="checked" />
-    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-    <div class="collapse-content">
-      <p>hello</p>
-    </div>
-  </div> <br>
-  <div class="collapse collapse-arrow bg-base-200">
-    <input type="radio" name="my-accordion-2" />
-    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-    <div class="collapse-content">
-      <p>hello</p>
-    </div>
-  </div> <br>
-  <div class="collapse collapse-arrow bg-base-200">
-    <input type="radio" name="my-accordion-2" />
-    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-    <div class="collapse-content">
-      <p>hello</p>
-    </div>
-  </div> <br>
-  <div class="collapse collapse-arrow bg-base-200">
-    <input type="radio" name="my-accordion-2" />
-    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-    <div class="collapse-content">
-      <p>hello</p>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>Document Object Model is like a map of a web page. A html page contains elements like headings, paragraph and
+          images or links. This particular structure looks like tree which is called node in the language of
+          programming. DOM Can be used interact with those node with the help of javascript to change the behavior or
+          the style of those elements. </p>
+      </div>
+    </div> <br>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p>There are many ways to select an element from the DOM. Most common practices are document.getElementById
+          which select the element with ID, document.getElementByClassName which select all elements having the
+          particular class, document.querySelector which selects the first element from the class.</p>
+      </div>
+    </div> <br>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it
+        useful?</div>
+      <div class="collapse-content">
+        <p>Event delegation in Dom is the practice where you can handle events such as click to a parent element without
+          adding event listeners to each of the elements which eventually saves time and Event delegation can also be
+          used to add events for new elements which you can add later to your page.</p>
+      </div>
+    </div> <br>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM?</div>
+      <div class="collapse-content">
+        <p>We can use setAttribute(), getAttribute() & removeAttribute() to manipulate and elements attributes and we
+          can use for example h1.style.color = 'blue'; to change the color of all the h1 elements. which works for most
+          of the css styles. We can also achieve this with Tailwind Css as an example Element.classList.add("shadow-lg",
+          "border-2") using this it will add class names to any element that you called using an ID</p>
+      </div>
     </div>
   </div>
- </div>
+
 </body>
 </html>

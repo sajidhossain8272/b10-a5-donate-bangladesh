@@ -33,8 +33,10 @@
 
   <section>
     <div class="flex justify-center gap-4 lg:pb-4 pb-4">
-      <button onclick="closeHistory()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-lime-300" > Donation </button>
-      <button onclick="openHistory()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-white" > History </button>
+      <button id="donation-button" onclick="closeHistory()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-lime-300" > Donation </button>
+      <button id="history-button" onclick="openHistory()" class="btn lg:pl-6 pl-3 lg:pr-6 pr-3 font-semibold lg:text-xl text-lg bg-white">
+        History
+      </button>
     </div>
   </section>
 
@@ -130,7 +132,7 @@
           <input id="donation-qouta" class="pl-2 w-full h-10 border-2" type="text" placeholder="Write Donation Amount">
         </div>
         <div class="card-actions justify-start">
-          <button onclick="processDonation('donation-qouta')" class="btn w-full mb-20 bg-lime-300">Donate now</button>
+          <button id="post-button" onclick="processDonation('donation-qouta')" class="btn w-full mb-20 bg-lime-300">Donate now</button>
       </div>
       </div>
     </div>
@@ -139,10 +141,18 @@
 </div>
 
 <div id="transaction-history" class="hidden">
-    <h1 class="flex justify-center font-bold">Transaction History</h1>
+  <div class="flex justify-center ">
+    <p id="no-transaction" class="shadow-lg w-1/2 border-2 p-4 rounded-lg flex justify-center align-middle font-medium text-xl">
+      No Transaction History found
+    </p>
+  </div>
+  <div class="p-4 gap-2" id="transaction-container"></div>
 </div>
 
+
+
 </body>
-<script src="JS/navigation.js"></script>
+
 <script src="JS/donation.js"> </script>
+<script src="JS/navigation.js"></script>
 </html>
