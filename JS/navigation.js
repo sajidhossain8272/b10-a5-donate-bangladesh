@@ -27,4 +27,3 @@ function closeHistory() {
 function openBlog() {
   window.open("blog.html", "_blank");
 }
-

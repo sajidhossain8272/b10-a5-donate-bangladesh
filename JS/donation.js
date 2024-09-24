@@ -62,9 +62,9 @@ function logTransaction(fundId, amount) {
   const now = new Date();
   const localTime = now.toLocaleString();
 
-  transactionElement.innerHTML = `Donated ${amount.toFixed(2)} for ${
+  transactionElement.innerHTML = `${amount.toFixed(2)} Taka is Donated for ${
     fundNames[fundId]
-  }<br> on ${localTime}`;
+  }<br> Date: ${localTime}`;
 
   transactionContainer.appendChild(transactionElement);
 }
